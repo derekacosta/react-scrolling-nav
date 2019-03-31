@@ -10,23 +10,14 @@ const Navbar = ({
     items, offset, duration, delay, height, 
     backgroundColor, children, coverWidth, navWidth, linkClass, activeLinkClass
 }) => {
-    const navbarStyle = {
-        height: height ? height : 70,
-        position: "fixed",
-        left: 0,
-        top: 0,
-        width: "100%",
-        backgroundColor: backgroundColor ? backgroundColor : "#222",
-        display: "flex",
-        justifyContent: "center"
-    };
+   
 
     offset = offset ? offset : -80;
     duration = duration ? duration : 500;
     delay = delay ? delay : 0;
 
     return (
-        <div style={navbarStyle}>
+        <div id="NavBarStyle">
             <Navs items={items} offset={offset} duration={duration} delay={delay} 
                 coverWidth={coverWidth} navWidth={navWidth} 
                 linkClass={linkClass ? linkClass : "link"}
