@@ -3,7 +3,7 @@ import React from 'react';
 import { Element } from 'react-scroll';
 
 const ElementsWrapper = ({ children, items, style, className }) => (
-    <div>
+    <div id="ElementStyles">
         {children.map((child, i) => (
             <Element style={style} className={className} name={items[i].target} key={i} >{child}</Element>
         ))}
